@@ -9,6 +9,8 @@
   <!--CSS Import-->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/subpage.css" />
+  <link rel="stylesheet" href="../css/jquery.css" />
+
 
 
   <!--Font Import-->
@@ -21,6 +23,14 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
   
 </head>
 <body>
@@ -36,9 +46,9 @@
     </nav>
   </div>
   <div class="container">
-    <div class="brand">
+    <a href="index.html"> <div class="brand">
       <h2>The Writer's <span>Block</span></h2>
-    </div>
+    </div></a>
 
     <div class="mobile-nav">
       <a href="#" class="open-menu">MENU</a>
@@ -56,10 +66,7 @@
           <a href="#">Articles</a>
 
           <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="../html/articles.html">All Articles</a>
-            </li>
-
+            
             <li class="menu-item">
               <a href="#">Events</a>
             </li>
@@ -103,8 +110,18 @@
 
           <p>If you’ve ever wondered how to write a poem, read on. Writing poetry doesn’t have to be daunting—we’re going to demystify the process and walk you through it, one step at a time. </p>
 
-          <h2>What is a poem?</h2>
+          <div id="accordion">
+            <h3>What is a poem?</h3>
+              <div>
+              <p>A poem is a singular piece of poetry. </p>
 
+                <p>Poems don’t have to rhyme; they don’t have to fit any specific format; and they don’t have to use any specific vocabulary or be about any specific topic. But here’s what they do have to do: use words artistically by employing figurative language. With a poem, the form is as important as the function—perhaps even more so.</p>
+
+                <p>In contrast, prose is writing that follows the standard sentence and paragraph structure. Prose, while it takes many different forms and tones, largely mimics human speech patterns. </p>
+
+          </div>
+          <h3>The Purpose of a Poem</h3>
+            <div>
             <p>Poetry expresses emotions and conveys ideas, but that’s not all it can do. Poets tell stories, teach lessons, and even communicate hidden messages through poetry. When you listen to music with lyrics, you’re listening to poetry. </p>
 
             <p>When you’re writing poetry, keep your goal in mind. Are you writing to evoke emotion? To perform your poem at an open mic night? To get a good grade on your assignment? Although there aren’t any hard and fast rules for writing poetry, there are some fundamental guidelines to keep in mind: </p>
@@ -120,13 +137,13 @@
                 It’s OK to break grammatical rules when doing so helps you express yourself.
               </li>
             </ul>
-
-          <h2>Elements of poetry</h2>
-
+          </div>
+          <h3>Elements of poetry</h3>
+          <div>
           <p>The key elements that distinguish poetry from other kinds of literature include sound, rhythm, rhyme, and format. The first three of these are apparent when you hear poetry read aloud. The last is most obvious when you read poetry...</p>
-
-          <p> </p>
-
+          </div>
+        </div>
+          <p></p>
           <p><i>Note: Article written on Grammarly. <a href="https://www.grammarly.com/blog/how-to-write-a-poem/">Read the full thing here.</a></i></p>
         </div>
 
@@ -223,8 +240,8 @@
 
       <div class="footer-bottom">
         <p>(C) The Writer's Block  
-          <a href="blank">Privacy Policy</a> | 
-          <a href="blank">Terms of Service</a></p>
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Service</a></p>
         </div>
   </div>
   </footer>

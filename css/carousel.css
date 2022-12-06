@@ -24,14 +24,34 @@
   }
 
   .slide-image {
-    /*Make the image container full screen*/
-    width: 40%;
+    /*modified to make container only part*/
+    width: 60vh;
     height: 40vh;
     /*Make the image cover the the screen and center it*/
     background-position: left;
     background-size: cover;
     /*Make images inline with each other*/
     display: block;
+  }
+
+  @media screen and (max-width: 689px) {
+    #carousel {
+      white-space: normal;
+    }
+
+    .carousel .slide-card .slide-content {
+      max-width: 70%;
+      white-space: normal;
+    }
+
+    
+    .carousel .slide-card .slide-content h3 {
+      font-family: 'Playfair Display', serif;
+      padding-bottom: 10px;
+      font-size: 14pt;
+      color: #E3413A;
+    }
+
   }
 
   .slide-card {
