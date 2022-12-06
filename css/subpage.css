@@ -1,0 +1,105 @@
+main {
+    margin: auto;
+    max-width: 1080px;
+  }
+
+  main .article h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  main .article h3 {
+    font-family: 'Work Sans', sans-serif;
+    
+  }
+
+  main .mid-body .left-panel .article-body p {
+    font-size: 12pt !important;
+    padding-bottom: 12px;
+  }
+  
+  main .mid-body .right-panel .side-grid-container a {
+    text-decoration: none;
+  }
+
+  .side-grid-item.subpage {
+    background-color: #FAFAFA  !important;
+  }
+
+  main .mid-body blockquote {
+    font-family: 'Playfair Display', serif;
+    width: 80%;
+    color:#2D7BA6;
+    background-color: #fff;
+    font-size: 16pt;
+    text-align: center;
+    align-items: center;
+    margin: 12px auto 16px auto;
+    padding: 8px;
+    border-top: dashed 1px rgba(227, 65, 58, 0.6);
+    border-bottom: dashed 1px rgba(227, 65, 58, 0.6);
+  }
+
+  main .mid-body .left-panel img {
+    padding: 12px 0; 
+  }
+
+  main .mid-body .left-panel .article-body ul {
+    padding: 12px 40px;
+  }
+
+  main .mid-body .left-panel .article-body li {
+    padding: 0 0 10px 0;
+  }
+
+  main .mid-body .left-panel .article-body a {
+    color: #2D7BA6;
+    text-decoration: none;
+  }
+
+  main .mid-body .left-panel .article-body span {
+    font-weight: 600;
+  }
+
+  main .mid-body .left-panel .article-body a:hover {
+    color: #579BB0;
+    text-decoration: none;
+  }
+
+  main .mid-body .right-panel .side-grid-container {
+    background-color: none !important;
+  }
+
+  main .mid-body .right-panel .side-grid-container .side-grid-item.subpage ul {
+    list-style-type: none;
+  }
+
+  main .mid-body .right-panel .side-grid-container .side-grid-item.subpage li {
+    padding: 6px 0; 
+    width: 100%;
+  }
+
+  main .mid-body .right-panel .side-grid-container .side-grid-item.subpage a {
+    color: #E3413A;
+  }
+
+  main .mid-body .right-panel .side-grid-container .side-grid-item.subpage a:hover {
+    color: #E9655F;
+  }
+
+  @Media screen and (max-width: 1000px) {
+    main .mid-body .right-panel .side-grid-container .side-grid-item.subpage ul {
+      padding-left: 18px;
+    }
+
+    main .mid-body .spacer-large {
+      padding: 6px;
+    }
+  }
+
+  .iframe-map {
+    display: flex;
+    margin: auto;
+    padding: 20px 0 0 0;
+    justify-content:center;
+  }

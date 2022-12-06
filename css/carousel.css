@@ -1,0 +1,112 @@
+#carousel {
+    /*Set the container carousel to be fullscreen. If you change the size
+    of your carousel make sure to also change the size of your slides*/
+    height: 40vh;
+    max-width: 1080px;
+    /*Prevent images from wrapping*/
+    white-space: nowrap;
+    overflow: hidden;
+    /*Allow children to be positioned relatively*/
+    position: relative;
+    margin: 10px auto;
+    border-bottom: solid 1px rgba(170, 181, 172, 0.8);
+  }
+
+   .carousel .slide-card .slide-content h3 {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;
+    font-size: 18pt;
+    color: #E3413A;
+  }
+
+  .carousel .slide-card .slide-content {
+    padding: 0 20px;
+  }
+
+  .slide-image {
+    /*Make the image container full screen*/
+    width: 40%;
+    height: 40vh;
+    /*Make the image cover the the screen and center it*/
+    background-position: left;
+    background-size: cover;
+    /*Make images inline with each other*/
+    display: block;
+  }
+
+  .slide-card {
+    display: flex;
+    align-items: center;
+    border-top: solid 1px rgba(170, 181, 172, 0.8);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .carousel-button {
+    cursor: pointer;
+  }
+
+  .carousel button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #FAFAFA;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #1E1E1E;
+    
+  }
+
+  .carousel .slide-card button {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #2D7BA6;
+    font-size: 10pt;
+    text-shadow: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .carousel .slide-card button:hover {
+    background-color: #579BB0
+  }
+  
+  #right-arrow {
+    right: 20px;
+  }
+  
+  #left-arrow {
+    left: 20px;
+  }
+  
+  #image1 {
+    background-image: url('../images/poem.jpg');
+  }
+  
+  #image2 {
+    background-image: url('../images/typewriter.jpg');
+  }
+  
+  #image3 {
+    background-image: url('../images/fiction.jpg');
+  }
+  
+
+  
+  /*Mobile Devices*/
+  @media (max-device-width: 960px) {
+    section .carousel .slide-card {
+        flex-direction: column;
+    }
+  }
+  
+  /*Small Browsers*/
+  @media (max-width: 767px) {
+    .arrow {
+      width: 10%;
+    }
+  }
+  
