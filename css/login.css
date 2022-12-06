@@ -16,6 +16,14 @@ main .account .form-box {
     box-shadow: 1px 2px 4px rgba(30, 30, 30,0.4);
 }
 
+@media screen and (max-width: 460px) {
+  main .account .form-box {
+    width: 95%;
+  }
+}
+
+
+
 main .account .form-box .social-icons {
     margin:auto;
     padding: 20px 0;

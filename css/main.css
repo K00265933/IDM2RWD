@@ -64,6 +64,10 @@
     
   }
 
+  header .container a {
+    text-decoration: none;
+  }
+
   /* MOBILE NAV*/
   header .container .mobile-nav {
     display: none;
@@ -151,11 +155,12 @@
     transform: translateY(-200px);
     pointer-events: none;
     transition: none;
-    min-width: 100%;
+    min-width: 60%;
     width: max-content;
-    background-color: #2D7BA6;
+    background-color: #579BB0;
     list-style-type: none;
     padding: 0 0 10px 0;
+    text-align: center;
   }
   header .container .main-nav .menu .menu-item.has-sub-menu .sub-menu .menu-item {
     width: 100%;
@@ -171,10 +176,17 @@
   }
   header .container .main-nav .close-menu {
     display: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  header .container .main-nav .close-menu a {
     color: #FAFAFA;
     text-decoration: none;
-    text-align: center;
+
   }
+
   @media screen and (max-width: 767px) {
     header .container .main-nav .close-menu {
       display: block;
@@ -187,7 +199,7 @@
       top: 0;
       left: 0;
       width: 100vw;
-      min-height: 100vh;
+      min-height: 30vh;
       z-index: 999;
       background-color: #2D7BA6;
       opacity: 0;
@@ -200,7 +212,7 @@
       display: block;
       position: absolute;
       top: 50%;
-      right: 15px;
+      right: 5%;
       transform: translateY(-50%);
       color: #FAFAFA;
       font-size: 18px;
@@ -213,6 +225,13 @@
     header .container .main-nav .menu {
       flex-direction: column;
     }
+
+    header .container .main-nav .menu .menu-item.has-sub-menu .sub-menu {
+      text-align: center;
+      margin-left: 20vh;
+      top: 10%;
+    }
+
     header .container .main-nav .menu .has-sub-menu > .sub-menu {
       display: none;
       position: relative;
@@ -423,13 +442,13 @@
   main .mid-body .left-panel {
     position: relative;
     padding: 20px 0;
-    width:64%;
+    width:69%;
   }
 
   main .mid-body .right-panel {
     position: relative;
     padding: 20px 0;
-    width: 34%;
+    width: 28%;
   }
 
   main .mid-body .left-panel .main-grid-container {
