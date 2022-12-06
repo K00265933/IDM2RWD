@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>The Writer's Block</title>
+
+  <!--CSS Import-->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/quotes.css" />
+  <link rel="stylesheet" href="../css/carousel.css" />
+
+  <!--Font Import-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+  <!--CAROUSEL-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!--START NAV-->
+  <header>
+    <div class="profile-container">
+      <nav class="top-nav">
+        <ul class="menu">
+          <li class="menu-item sign-up">
+            <a href="../html/login.html">My Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="brand">
+        <h2>The Writer's <span>Block</span></h2>
+      </div>
+
+      <div class="mobile-nav">
+        <a href="#" class="open-menu">MENU</a>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="../html/about.html">About</a>
+          </li>
+          <li class="menu-item has-sub-menu">
+            <a href="#">Articles</a>
+
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="../html/articles.html">All Articles</a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">Events</a>
+              </li>
+              
+              <li class="menu-item">
+                <a href="#">News</a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">Resources</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">Contests</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Prompts</a>
+          </li>
+        </ul>
+        <a href="#" class="close-menu">Close Menu</a>
+      </nav>
+    </div>
+  </header>
+<!--END NAV-->
+
+
+  <main>
+
+    <section class="carousel" id="carousel">
+      <button class="arrow" id="left-arrow" title="Previous">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+      </button>
+      <button class="arrow" id="right-arrow" title="Next">
+          <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+          <div class="slide-card" id="slide1">
+              <div class="slide-image" id="image1"></div>
+              <div class="slide-content">
+                  <h3>How to write a poem</h3>
+                  <p>It's poetry week - we can't all be prose.</p>
+                    <button class="carousel-button" id="firstArticle">Rhyme Time</button>
+              </div>
+          </div>
+          <div class="slide-card" id="slide2">
+              <div class="slide-image" id="image2"></div>
+              <div class="slide-content">
+                  <h3>Want to submit your own article?</h3>
+                  <p>We want to hear what you have to say!</p>
+                    <button class="carousel-button" id="secondArticle">Say It Here!</button>
+              </div>
+          </div>
+          <div class="slide-card" id="slide3">
+              <div class="slide-image" id="image3"></div>
+              <div class="slide-content">
+                  <h3>Tips for writing fiction</h3>
+                  <p>Hint: Include a middle, beginning and end.</p>
+                    <button class="carousel-button" id="thirdArticle">Find Out Details</button>
+              </div>
+            </div>
+
+  </section>
+
+  <!--QUOTES-->
+  <section>
+    <div class="container">
+      
+      <div class="quote-title">
+        <h2>Inspiration</h2>
+      </div>
+
+      <div class="quote-container" id="quote-container">
+        <!--Quote-->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <!--Author-->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+      </div>
+        <!--New Quote Button-->
+      <div class="quote-button">
+        <button class="new-quote" id="newQuote">New Quote</button>
+      </div>
+    </div>
+
+    </section>
+
+
+  <!--NEWS GRID-->
+
+  <section class="mid-body">
+
+    <section class="left-panel">
+      <h2>News</h2>
+
+      <div class="main-grid-container">
+        <div class="main-grid-item">
+          <img src="../images/poem.jpg">
+            <div class="pre-button">
+              <h3>How to write a poem</h3>
+              <p>It's poetry week - we can't all be prose.</p>
+            </div>
+            <button class="read-more-button" id="articleOne">Read More</button>
+
+        </div>
+
+        <div class="spacer"> </div>
+
+        <div class="main-grid-item">
+            <img src="../images/typewriter.jpg">
+              <div class="pre-button">
+                <h3>Want to submit your own article?</h3>
+                <p>We want to hear what you have to say!</p>
+            </div>
+          <button class="read-more-button" id="articleTwo">Read More</button>
+        </div>
+      
+      </div>
+
+      <div class="spacer"> </div>
+
+      <div class="main-grid-container">
+        <div class="main-grid-item">
+            <img src="../images/fiction.jpg">
+              <div class="pre-button">
+                <h3>Tips for writing fiction</h3>
+                <p>Hint: Include a beginning, middle and end.</p>
+              </div>
+            <button class="read-more-button" id="articleThree">Read More</button>
+        </div>
+
+        <div class="spacer"> </div>
+
+        <div class="main-grid-item">
+          <img src="../images/typewriter.jpg">
+            <div class="pre-button">
+              <h3>This is a H3</h3>
+              <p>This is grid item content</p>
+            </div>
+          <button class="read-more-button" id="articleFour">Read More</button>
+        </div>
+      
+      </div>
+    </section>
+
+    <div class="spacer-large"> </div>
+
+    <section class="right-panel">
+      <h2>Events</h2>
+
+      <div class="side-grid-container">
+        <div class="side-grid-item">
+          <img src="../images/diary.jpg">
+            <div class="pre-button">     
+              <h3>December Writing Challenge</h3>
+              <h4>Event Start: 1 December 2022</h4>
+              <p>It's finally here — your December Challenge Prompt.</p>
+            </div>
+            <button class="read-more-button" id="eventOne">Read More</button>
+        </div>
+
+        <div class="spacer"> </div>
+        
+        <div class="side-grid-item">
+          <img src="../images/bookcoffee.jpg">
+            <div class="pre-button"> 
+              <h3>Q&A: The Writer's Block Staff</h3>
+              <h4>12 December 2022</h4>
+              <p>Send us questions in advance or come prepared.</p>
+            </div>
+            <button class="read-more-button" id="eventTwo">Read More</button>
+        </div>
+      </div>
+
+    </section>
+
+
+  </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-main">
+
+        <div class="footer-div">
+          <h2>Additional Links</h2>
+
+          <ul class="footer-links">
+              <li class="foot-item">
+                <a href="#">About The Writer's Block</a>
+              </li>
+              <li class="foot-item">
+                <a href="#">Contact us</a>
+              </li>
+              <li class="foot-item">
+                <a href="#">Join our team</a>
+              </li>
+              <li class="foot-item">
+                <a href="#">Advertise with us</a>
+              </li>
+          </ul>
+        
+        </div>
+
+        <div class="footer-div">
+          <h2>Share The Writer's Block</h2>
+          <ul class="footer-social">
+            <li class="share-links">
+              <button class="facebook-button" id="facebook" title="Share on Facebook!">
+                <i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="share-links">
+              <button class="twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </li>
+            <li class="share-links">
+              <button class="insta-button" id="insta" title="Insta Now!">
+                <i class="fa-brands fa-instagram"></i>
+            </li>
+          </ul>
+          
+        </div> 
+      </div>
+    
+
+      <div class="footer-bottom">
+        <p>(C) The Writer's Block  
+          <a href="blank">Privacy Policy</a> | 
+          <a href="blank">Terms of Service</a></p>
+        </div>
+  </div>
+  </footer>
+
+<!--Loader-->
+
+<div class="loader" id="loader"></div>
+
+  <script src="../script/main.js"></script>
+  <script src="../script/quotes.js"></script>
+  <script src="../script/carousel.js"></script>
+  <script> 
+    document.getElementById("newQuote").click();
+  </script>
+
+</body>
+</html>
